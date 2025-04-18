@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7D6A93D55CC5A70FA2F3992D /* Pods_MFT2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9220F46842B5A0F0EAC0CB /* Pods_MFT2.framework */; };
+		DE93B5E82DB250890072A6AD /* RequestReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE93B5E72DB250890072A6AD /* RequestReview.swift */; };
 		DEF34AC72D9FE4510024180C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF34ABE2D9FE4510024180C /* Assets.xcassets */; };
 		DEF34AC92D9FE4510024180C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF34AC12D9FE4510024180C /* LaunchScreen.storyboard */; };
 		DEF34C9E2D9FE5660024180C /* Onboarding.Start.json in Resources */ = {isa = PBXBuildFile; fileRef = DEF34BAC2D9FE5660024180C /* Onboarding.Start.json */; };
@@ -338,7 +339,6 @@
 		DEF34DE32D9FE5660024180C /* SubjectProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34C8D2D9FE5660024180C /* SubjectProgress.swift */; };
 		DEF34DE42D9FE5660024180C /* GetStatsResponseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34C922D9FE5660024180C /* GetStatsResponseMapper.swift */; };
 		DEF34DE52D9FE5660024180C /* DailyGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34B492D9FE5660024180C /* DailyGoalView.swift */; };
-		DEF34DE62D9FE5660024180C /* TestRateUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34BFE2D9FE5660024180C /* TestRateUs.swift */; };
 		DEF34DE72D9FE5660024180C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34B652D9FE5660024180C /* ProfileViewController.swift */; };
 		DEF34DE82D9FE5660024180C /* CustomMadeTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF34BEE2D9FE5660024180C /* CustomMadeTestViewController.swift */; };
 		DEF34DF32D9FE56F0024180C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DEF34DF12D9FE56F0024180C /* Localizable.strings */; };
@@ -352,6 +352,7 @@
 /* Begin PBXFileReference section */
 		43A20AA25AC9D061F25AF973 /* Pods-MFT2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFT2.release.xcconfig"; path = "Target Support Files/Pods-MFT2/Pods-MFT2.release.xcconfig"; sourceTree = "<group>"; };
 		5EB6712B887163B87113B72A /* Pods-MFT2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFT2.debug.xcconfig"; path = "Target Support Files/Pods-MFT2/Pods-MFT2.debug.xcconfig"; sourceTree = "<group>"; };
+		DE93B5E72DB250890072A6AD /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		DEF34AA52D9FE44A0024180C /* MFT2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFT2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF34ABE2D9FE4510024180C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEF34ABF2D9FE4510024180C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -574,7 +575,6 @@
 		DEF34BF92D9FE5660024180C /* TestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestType.swift; sourceTree = "<group>"; };
 		DEF34BFB2D9FE5660024180C /* TestCloseMediator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCloseMediator.swift; sourceTree = "<group>"; };
 		DEF34BFC2D9FE5660024180C /* TestCloseObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCloseObserver.swift; sourceTree = "<group>"; };
-		DEF34BFE2D9FE5660024180C /* TestRateUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRateUs.swift; sourceTree = "<group>"; };
 		DEF34C002D9FE5660024180C /* AVPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerView.swift; sourceTree = "<group>"; };
 		DEF34C022D9FE5660024180C /* QuestionContentCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentCollectionCell.swift; sourceTree = "<group>"; };
 		DEF34C032D9FE5660024180C /* QuestionContentCollectionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionContentCollectionType.swift; sourceTree = "<group>"; };
@@ -863,6 +863,7 @@
 				DEF34AF92D9FE5660024180C /* TextAttributes.swift */,
 				DEF34AFA2D9FE5660024180C /* Weak.swift */,
 				DEF34AFB2D9FE5660024180C /* XOREncryption.swift */,
+				DE93B5E72DB250890072A6AD /* RequestReview.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1651,14 +1652,6 @@
 			path = Observer;
 			sourceTree = "<group>";
 		};
-		DEF34BFF2D9FE5660024180C /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				DEF34BFE2D9FE5660024180C /* TestRateUs.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		DEF34C012D9FE5660024180C /* Atoms */ = {
 			isa = PBXGroup;
 			children = (
@@ -1727,7 +1720,6 @@
 			children = (
 				DEF34BFA2D9FE5660024180C /* Model */,
 				DEF34BFD2D9FE5660024180C /* Observer */,
-				DEF34BFF2D9FE5660024180C /* Utils */,
 				DEF34C152D9FE5660024180C /* Views */,
 				DEF34C162D9FE5660024180C /* TestView.swift */,
 				DEF34C172D9FE5660024180C /* TestViewController.swift */,
@@ -2427,6 +2419,7 @@
 				DEF34D1B2D9FE5660024180C /* StudyModeViewController.swift in Sources */,
 				DEF34D1C2D9FE5660024180C /* StatsMainProgressView.swift in Sources */,
 				DEF34D1D2D9FE5660024180C /* ScreenSize.swift in Sources */,
+				DE93B5E82DB250890072A6AD /* RequestReview.swift in Sources */,
 				DEF34D1E2D9FE5660024180C /* GetFailedTestRequest.swift in Sources */,
 				DEF34D1F2D9FE5660024180C /* PlanFinalStepView.swift in Sources */,
 				DEF34D202D9FE5660024180C /* StatsManager.swift in Sources */,
@@ -2627,7 +2620,6 @@
 				DEF34DE32D9FE5660024180C /* SubjectProgress.swift in Sources */,
 				DEF34DE42D9FE5660024180C /* GetStatsResponseMapper.swift in Sources */,
 				DEF34DE52D9FE5660024180C /* DailyGoalView.swift in Sources */,
-				DEF34DE62D9FE5660024180C /* TestRateUs.swift in Sources */,
 				DEF34DE72D9FE5660024180C /* ProfileViewController.swift in Sources */,
 				DEF34DE82D9FE5660024180C /* CustomMadeTestViewController.swift in Sources */,
 			);
@@ -2662,7 +2654,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2677,7 +2669,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.exams.emt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -2698,7 +2690,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -2713,7 +2705,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = prep.exams.emt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
