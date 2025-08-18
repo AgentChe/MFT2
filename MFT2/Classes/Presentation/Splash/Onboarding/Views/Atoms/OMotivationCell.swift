@@ -53,7 +53,7 @@ final class OMotivationCell: UIButton {
 // MARK: Private
 private extension OMotivationCell {
     func update() {
-        backgroundColor = isChecked ? Appearance.main300.withAlphaComponent(0.2) : Appearance.custom230_231_248
+        backgroundColor = isChecked ? Appearance.main300.withAlphaComponent(0.2) : Appearance.main200
         layer.borderWidth = isChecked ? 2.scale : 0
         layer.borderColor = isChecked ? Appearance.main300.cgColor : UIColor.clear.cgColor
     }

@@ -315,7 +315,7 @@ private extension OPlanView {
     
     func makeColumn1View() -> UIView {
         let view = UIView()
-        view.backgroundColor = Appearance.custom230_231_248
+        view.backgroundColor = Appearance.main200
         view.layer.cornerRadius = 8.scale
         view.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         view.translatesAutoresizingMaskIntoConstraints = false

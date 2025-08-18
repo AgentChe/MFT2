@@ -107,7 +107,7 @@ private extension CustomMadeTestTableSwitchCell {
         let view = UISwitch()
         view.thumbTintColor = Appearance.mono100
         view.onTintColor = Appearance.main300
-        view.tintColor = Appearance.custom230_231_248
+        view.tintColor = Appearance.main200
         view.addTarget(self, action: #selector(switched), for: .valueChanged)
         view.translatesAutoresizingMaskIntoConstraints = false
         container.addSubview(view)

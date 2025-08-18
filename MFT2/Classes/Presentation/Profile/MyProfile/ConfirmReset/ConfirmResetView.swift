@@ -147,7 +147,7 @@ private extension ConfirmResetView {
         
         let view = UIButton()
         view.layer.cornerRadius = 8.scale
-        view.backgroundColor = Appearance.custom230_231_248
+        view.backgroundColor = Appearance.main200
         view.setAttributedTitle("Cancel".localized.attributed(with: attrs), for: .normal)
         view.translatesAutoresizingMaskIntoConstraints = false
         container.addSubview(view)
