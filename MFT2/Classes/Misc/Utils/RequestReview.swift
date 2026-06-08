@@ -13,9 +13,6 @@ final class RequestReview {
                 .first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene
         else { return }
 
-        AmplitudeManager.shared
-            .logEvent(name: "Rating Request")
-
         DispatchQueue.main.async {
             SKStoreReviewController.requestReview(in: scene)
         }
